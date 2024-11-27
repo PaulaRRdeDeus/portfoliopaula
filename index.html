@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Bem-Vindo</title> 
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            border: 20px solid #ff7ecf; 
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .top-bar {
+            width: 100%;
+            height: 50px;
+            background-color: #ff7ecf;
+            flex-shrink: 0;
+            position: relative;
+        }
+        .inner-border {
+            width: 100%;
+            border: 10px solid #fbccfc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            flex-grow: 1;
+            height: 450px;
+            padding: 20px;
+        }
+        h1 {
+            font-family: Arial, sans-serif;
+            color: black;
+            margin: 0;
+            font-size: 2rem;
+            text-align: center;
+        }
+        h2 {
+            font-family: Arial, sans-serif;
+            color: #c198f8;
+            font-size: 5rem;
+            margin: 10px 0;
+            text-align: center;
+        }
+        h3 {
+            font-family: Arial, sans-serif;
+            color: #c198f8;
+            font-size: 1.5rem;
+            margin: 10px 0;
+            text-align: left;
+        }
+        .top-left, .top-right {
+            position: absolute;
+            top: 0;
+            font-size: 2rem;
+            color: white;
+            line-height: 50px;
+        }
+        .top-left {
+            left: 0;
+        }
+        .top-right {
+            right: 0;
+        }
+        .bottom-bar {
+            width: 100%;
+            height: 500px;
+            background-color: #242424;
+            border-top: 20px solid #ff7ecf;
+            padding: 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: stretch;
+        }
+        .left {
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: left;
+            max-width: 50%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            overflow-y: auto;
+        }
+        .left h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .left p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin: 10px 0;
+            color: #ff7ecf;
+        }
+        .image-container {
+            max-width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: stretch;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .image-container img {
+            height: auto;
+            max-height: 100%;
+            width: auto;
+        }
+        .image-below {
+            width: 104%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 10;
+            margin-top: 0px;
+        }
+
+        .image-below img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image-row {
+            display: flex;
+            width: 100%;
+            margin-top: 20px; 
+        }
+        .image-row .image-half {
+            flex: 1; 
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .image-row .image-half img {
+            display: block;
+            height: auto;
+        }
+        .image-row .image-half:first-child img {
+            margin-left: 10%; 
+            width: 80%; 
+        }
+        .image-row .image-half:last-child img {
+            margin-right: 10%;
+            width: 75%; 
+            border: 1px solid black; 
+        }
+
+        .image-miku {
+            margin-top: 20px; 
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .image-miku img {
+            width: 90%; 
+            max-width: 90%; 
+            height: auto;
+            border: 1px solid black; 
+        }
+
+        .image-3 {
+            margin-top: 20px; 
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .image-3 img {
+            width: 106%; 
+            max-width: 106%;
+            height: auto;
+        }
+
+        .image-row-four {
+            display: flex;
+            width: 100%;
+            margin-top: 20px; 
+            justify-content: space-between;
+        }
+        .image-row-four img {
+            width: 23%; 
+            height: auto;
+            margin: 0 1%; 
+        }
+
+        /* Ajuste para img 5 */
+        .image-row-two img:first-child {
+            width: 55%; 
+        }
+
+        /* Ajuste para img 6 */
+        .image-row-two img:last-child {
+            max-width: 40%; 
+            height: auto;
+            object-fit: contain; 
+            margin-left: 10px; 
+            margin-right: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-left">&#10084;</div>
+        <div class="top-right">&#10006;</div>
+    </div>
+    <div class="inner-border">
+        <h1>Seja bem-vindo</h1>
+        <h2>Paula Regina</h2>
+        <h3>Ilustradora  |  Designer  |  Cosplayer</h3>
+    </div>
+    <div class="bottom-bar">
+        <div class="left">
+            <h3>Olá, eu sou a Paula</h3>
+            <p>designer e ilustradora apaixonada por criar mundos imaginários através de ilustrações de personagens. Ao longo dos últimos anos trabalhando como freelancer, desenvolvi um estilo próprio que mistura cores vibrantes e elementos do universo do terror, criando uma atmosfera única em minhas obras. Meu trabalho autoral reflete minha constante busca por novas formas de expressão e uma conexão profunda com minhas influências criativas.</p>
+            <p>Além de minha jornada artística, sou cosplayer, participo de eventos e apresentações dedicados à cultura pop, o que me inspira tanto na criação de personagens quanto na vivência de diferentes universos. No meu tempo livre, adoro cozinhar, ler e aproveitar bons momentos com quem amo, sempre buscando equilibrar as diversas paixões que alimentam minha criatividade.</p>
+        </div>
+        <div class="image-container">
+            <img src="imagem.png" alt="Foto Paula">
+        </div>
+    </div>
+
+    <div class="image-below">
+        <img src="imagem 2.png" alt="Imagem Abaixo">
+    </div>
+
+    <div class="image-row">
+        <div class="image-half">
+            <img src="quartinha.png" alt="Imagem à esquerda">
+        </div>
+        <div class="image-half">
+            <img src="capa.png" alt="Imagem à direita">
+        </div>
+    </div>
+
+    <!-- Imagem Miku Miku Beam -->
+    <div class="image-miku">
+        <img src="miku miku beam.png" alt="Miku Miku Beam">
+    </div>
+
+    <!-- Imagem 3 -->
+    <div class="image-3">
+        <img src="imagem 3.png" alt="Imagem 3">
+    </div>
+
+    <!-- Quatro novas imagens enfileiradas -->
+    <div class="image-row-four">
+        <img src="img 1.png" alt="Img 1">
+        <img src="img 2.png" alt="Img 2">
+        <img src="img 3.png" alt="Img 3">
+        <img src="img 4.png" alt="Img 4">
+    </div>
+
+    <!-- Duas imagens abaixo -->
+    <div class="image-row-two">
+        <img src="img 5.png" alt="Img 5">
+        <img src="img 6.png" alt="Img 6">
+    </div>
+</body>
+</html>
